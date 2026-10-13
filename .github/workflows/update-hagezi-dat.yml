@@ -1,1 +1,79 @@
-{"success":false,"request_id":"07c4a209-d436-48df-a751-e05be1688e08","data":{"code":"Bad_Request","details":"invalid workspace path"}}
+name: Update HaGeZi .dat lists
+
+on:
+  schedule:
+    - cron: "17 4 */3 * *"
+
+  workflow_dispatch:
+    inputs:
+      lists:
+        description: "Списки для сборки (pro,pro-plus,ultimate)"
+        required: false
+        default: "pro,pro-plus,ultimate"
+        type: string
+      allow_build:
+        description: "Разрешить сборку dlc из исходников, если бинарника нет"
+        required: false
+        default: true
+        type: boolean
+      force:
+        description: "Пересобрать заново, сбросив сохранённое состояние"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hagezi-dlc-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Build and update HaGeZi lists
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Go
+        if: github.event_name == 'schedule' || inputs.allow_build
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.x"
+          cache: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Force fresh build
+        if: inputs.force == true
+        shell: bash
+        run: rm -f state/hagezi-dlc.json
+
+      - name: Build lists and commit changes
+        shell: bash
+        env:
+          LISTS: ${{ inputs.lists }}
+          ALLOW_BUILD: ${{ inputs.allow_build }}
+        run: |
+          set -euo pipefail
+          args=(--repo-root . --commit --push --branch "$GITHUB_REF_NAME")
+
+          # For scheduled runs always permit building dlc. For manual runs,
+          # respect the allow_build input (defaults to true).
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" || "$ALLOW_BUILD" == "true" ]]; then
+            args+=(--allow-build)
+          fi
+
+          if [[ -n "$LISTS" ]]; then
+            args+=(--lists "$LISTS")
+          fi
+
+          python scripts/build_dlc.py "${args[@]}"
