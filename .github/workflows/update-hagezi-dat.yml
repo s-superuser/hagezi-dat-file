@@ -77,3 +77,21 @@ jobs:
           fi
 
           python scripts/build_dlc.py "${args[@]}"
+
+      # Публикуем все имеющиеся .dat в одном постоянном GitHub Release.
+      # Повторный запуск заменяет одноимённые assets свежими файлами.
+      - name: Publish DAT files to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: hagezi-dat
+          target_commitish: ${{ github.event.repository.default_branch }}
+          name: HaGeZi DNS blocklists (.dat) — latest
+          body: |
+            Автоматически собранные geosite .dat-файлы из списков HaGeZi.
+
+            При каждом успешном запуске workflow файлы в этом релизе обновляются.
+          files: dat/*.dat
+          fail_on_unmatched_files: true
+          overwrite_files: true
+          make_latest: true
