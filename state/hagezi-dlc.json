@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T17:42:57Z",
-  "checked_at": "2026-10-13T17:42:57Z",
+  "generated_at": "2026-10-13T17:53:40Z",
+  "checked_at": "2026-10-13T17:53:40Z",
   "dlc_release": "20261009101206",
   "lists": {
     "pro": {
@@ -15,7 +15,7 @@
       "outfile": "hagezi-pro.dat",
       "dat_sha256": "56516972fa569108f47d21158500a4b692761198e5520e99b8136f401c69518c",
       "dat_size": 4654392,
-      "changed": true
+      "changed": false
     },
     "pro-plus": {
       "title": "HaGeZi's Multi PRO++ - advanced protection (more aggressive)",
@@ -29,7 +29,7 @@
       "outfile": "hagezi-pro-plus.dat",
       "dat_sha256": "60d916a43b8fc950346421560593c59c2f9e14bbf5cfb659accffdf93601ce18",
       "dat_size": 4988127,
-      "changed": true
+      "changed": false
     },
     "ultimate": {
       "title": "HaGeZi's Multi ULTIMATE - maximum protection (most aggressive)",
@@ -43,7 +43,7 @@
       "outfile": "hagezi-ultimate.dat",
       "dat_sha256": "70f86ba975ffba5ff63ddc6e644d163cd80b7ba3caeac2c43fe1bd84e2a83d37",
       "dat_size": 5580355,
-      "changed": true
+      "changed": false
     }
   }
 }
