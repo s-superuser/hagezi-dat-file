@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-13T17:42:57Z",
+  "checked_at": "2026-10-13T17:42:57Z",
+  "dlc_release": "20261009101206",
+  "lists": {
+    "pro": {
+      "title": "HaGeZi's Multi PRO - extended protection (recommended)",
+      "source": "wildcard/pro.txt",
+      "source_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.txt",
+      "hagezi_version": "2026.1013.0830.16",
+      "hagezi_last_modified": "13 Oct 2026 08:30 UTC",
+      "source_sha256": "6785278e5c211c4b9206208882814a3177029b4d6d1d09885a91ae0e4d4982c1",
+      "rules": 194332,
+      "listname": "HAGEZI-PRO",
+      "outfile": "hagezi-pro.dat",
+      "dat_sha256": "56516972fa569108f47d21158500a4b692761198e5520e99b8136f401c69518c",
+      "dat_size": 4654392,
+      "changed": true
+    },
+    "pro-plus": {
+      "title": "HaGeZi's Multi PRO++ - advanced protection (more aggressive)",
+      "source": "wildcard/pro.plus.txt",
+      "source_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.txt",
+      "hagezi_version": "2026.1013.0838.14",
+      "hagezi_last_modified": "13 Oct 2026 08:38 UTC",
+      "source_sha256": "6959528fbc5ad5ad7e4fc593bcbfc289ad523ef6b2a2ed0987629ec27aa57097",
+      "rules": 208012,
+      "listname": "HAGEZI-PRO-PLUS",
+      "outfile": "hagezi-pro-plus.dat",
+      "dat_sha256": "60d916a43b8fc950346421560593c59c2f9e14bbf5cfb659accffdf93601ce18",
+      "dat_size": 4988127,
+      "changed": true
+    },
+    "ultimate": {
+      "title": "HaGeZi's Multi ULTIMATE - maximum protection (most aggressive)",
+      "source": "wildcard/ultimate.txt",
+      "source_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.txt",
+      "hagezi_version": "2026.1013.0842.29",
+      "hagezi_last_modified": "13 Oct 2026 08:42 UTC",
+      "source_sha256": "d5d8db4bc695dfb6dbfe2cb511329e38ac613992f1f3fea97142e0fa2abf6781",
+      "rules": 231532,
+      "listname": "HAGEZI-ULTIMATE",
+      "outfile": "hagezi-ultimate.dat",
+      "dat_sha256": "70f86ba975ffba5ff63ddc6e644d163cd80b7ba3caeac2c43fe1bd84e2a83d37",
+      "dat_size": 5580355,
+      "changed": true
+    }
+  }
+}
