@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-10-13T17:53:40Z",
-  "checked_at": "2026-10-13T17:53:40Z",
-  "dlc_release": "20261009101206",
+  "generated_at": "2026-10-16T09:00:13Z",
+  "checked_at": "2026-10-16T09:00:13Z",
+  "dlc_release": "20261015074526",
   "lists": {
     "pro": {
       "title": "HaGeZi's Multi PRO - extended protection (recommended)",
       "source": "wildcard/pro.txt",
       "source_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.txt",
-      "hagezi_version": "2026.1013.0830.16",
-      "hagezi_last_modified": "13 Oct 2026 08:30 UTC",
-      "source_sha256": "6785278e5c211c4b9206208882814a3177029b4d6d1d09885a91ae0e4d4982c1",
-      "rules": 194332,
+      "hagezi_version": "2026.1015.2252.59",
+      "hagezi_last_modified": "15 Oct 2026 22:52 UTC",
+      "source_sha256": "4a6c40d53580445776f4ec3c36033c9f406cd59bf4ebe0160052197ea30e82fd",
+      "rules": 199227,
       "listname": "HAGEZI-PRO",
       "outfile": "hagezi-pro.dat",
-      "dat_sha256": "56516972fa569108f47d21158500a4b692761198e5520e99b8136f401c69518c",
-      "dat_size": 4654392,
-      "changed": false
+      "dat_sha256": "afa0ff575bd6a5c42fd8baaabc9ff5b226818fd7418a3941dcad9530e39ffe9c",
+      "dat_size": 4769233,
+      "changed": true
     },
     "pro-plus": {
       "title": "HaGeZi's Multi PRO++ - advanced protection (more aggressive)",
       "source": "wildcard/pro.plus.txt",
       "source_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/pro.plus.txt",
-      "hagezi_version": "2026.1013.0838.14",
-      "hagezi_last_modified": "13 Oct 2026 08:38 UTC",
-      "source_sha256": "6959528fbc5ad5ad7e4fc593bcbfc289ad523ef6b2a2ed0987629ec27aa57097",
-      "rules": 208012,
+      "hagezi_version": "2026.1015.2300.29",
+      "hagezi_last_modified": "15 Oct 2026 23:00 UTC",
+      "source_sha256": "a4ebe23e095b647bde9a627b634681557f1197c031e833b850ac5cf568319d19",
+      "rules": 213205,
       "listname": "HAGEZI-PRO-PLUS",
       "outfile": "hagezi-pro-plus.dat",
-      "dat_sha256": "60d916a43b8fc950346421560593c59c2f9e14bbf5cfb659accffdf93601ce18",
-      "dat_size": 4988127,
-      "changed": false
+      "dat_sha256": "b51c830d3c2070709c36b4a990f5e400b9ebc37a37d966656e296b12b5a1835b",
+      "dat_size": 5111762,
+      "changed": true
     },
     "ultimate": {
       "title": "HaGeZi's Multi ULTIMATE - maximum protection (most aggressive)",
       "source": "wildcard/ultimate.txt",
       "source_url": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/wildcard/ultimate.txt",
-      "hagezi_version": "2026.1013.0842.29",
-      "hagezi_last_modified": "13 Oct 2026 08:42 UTC",
-      "source_sha256": "d5d8db4bc695dfb6dbfe2cb511329e38ac613992f1f3fea97142e0fa2abf6781",
-      "rules": 231532,
+      "hagezi_version": "2026.1015.2304.49",
+      "hagezi_last_modified": "15 Oct 2026 23:04 UTC",
+      "source_sha256": "0014dad109c1454d5e519d9749cd908554d1553236aeb3a4153111e5c4a3f23a",
+      "rules": 237288,
       "listname": "HAGEZI-ULTIMATE",
       "outfile": "hagezi-ultimate.dat",
-      "dat_sha256": "70f86ba975ffba5ff63ddc6e644d163cd80b7ba3caeac2c43fe1bd84e2a83d37",
-      "dat_size": 5580355,
-      "changed": false
+      "dat_sha256": "803c511d4669006397a0314a3a3f3a8520b7aa7b3a7e99e1d2ab5a15bc3b371a",
+      "dat_size": 5716991,
+      "changed": true
     }
   }
 }
